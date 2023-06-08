@@ -1,0 +1,7 @@
+https://developer.confluent.io/tutorials/window-final-result/kstreams.html
+
+Then we stream, selectKey and groupByKey and finally apply the Suppress operator.
+
+The suppress operator will delete every intermediate change once the grace period is over. By doing so it will also emit the final result
+
+Note: even after suppress operator applied, you will need the next event to advance the stream time and get your result.
